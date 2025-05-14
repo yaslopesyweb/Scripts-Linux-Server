@@ -18,5 +18,7 @@ Ideal para estudantes de **Sistemas Operacionais, Administração de Sistemas Li
 
 ## 📂 Estrutura Esperada
 
-<div align="center"> <img src="C:\Users\yasmin.aslopes\OneDrive - SENAC - SP\Documentos\GitHub\Scripts-Linux-Server\CHMOD\TRABALHO_CHMOD.JPG" alt="Estrutura de Diretórios e Permissões"> </div> 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/yaslopesyweb/Scripts-Linux-Server/main/CHMOD/TRABALHO_CHMOD.JPG" alt="Estrutura de Diretórios e Permissões">
+</div>
 
