@@ -1,0 +1,174 @@
+mkdir CONTABILIDADE FINANCEIRO AUDITORIA FILANTROPIA RH TI RECEPCAO DIRETORIA COMPRAS JURIDICO PROJETOS FUNC-GERAL 
+
+cd /var/yasmin/CONTABILIDADE
+touch livro-caixa guias-pagamento
+
+cd /var/yasmin/FINANCEIRO
+touch duplicatas-pagas notas-compras
+
+cd /var/yasmin/AUDITORIA
+touch insumos registro-entrada
+
+cd /var/yasmin/FILANTROPIA
+touch trabalho-voluntario mentoria
+
+cd /var/yasmin/RH
+touch controle-ponto ficha-registro
+
+cd /var/yasmin/TI
+touch lista-micros locais-impressoras
+
+cd /var/yasmin/RECEPCAO
+touch lista-recados registro-ocorrencia
+
+cd /var/yasmin/DIRETORIA
+touch reuniao-interna projetos-atuais
+
+cd /var/yasmin/COMPRAS
+touch notas-compras notas-pagar
+
+cd /var/yasmin/JURIDICO
+touch processos-internos processos-externos
+
+cd /var/yasmin/PROJETOS
+touch reforma-predio mudancas-internas
+
+usuarios 1
+useradd Maria
+useradd Mariana
+useradd Robson
+useradd Claudia
+useradd Carlos
+useradd Rodrigo
+useradd Cleber
+useradd Daniele
+useradd Agostinho
+useradd Samuel
+useradd Ana
+
+usuarios 2
+useradd Marcio
+useradd Cleiton
+useradd Dulce
+useradd Paulo
+useradd Sonia
+useradd Tabata
+useradd Alberto
+useradd Renata
+useradd Nadir
+useradd Roberto
+useradd Bruna
+
+
+groupadd FINANCEIRO
+groupadd AUDITORIA
+groupadd FILANTROPIA
+groupadd RH
+groupadd TI
+groupadd RECEPCAO
+groupadd DIRETORIA
+groupadd COMPRAS
+groupadd JURIDICO
+groupadd PROJETOS
+groupadd FUNC-GERAL
+
+usermod -aG CONTABILIDADE Maria
+usermod -aG FUNC-GERAL Maria
+
+usermod -aG FINANCEIRO Mariana
+usermod -aG FUNC-GERAL Mariana
+
+usermod -aG AUDITORIA Robson
+usermod -aG FUNC-GERAL Robson
+
+usermod -aG FILANTROPIA Claudia
+usermod -aG FUNC-GERAL Claudia
+
+usermod -aG RH Carlos
+usermod -aG FUNC-GERAL Carlos
+
+usermod -aG TI Rodrigo
+usermod -aG FUNC-GERAL Rodrigo
+
+usermod -aG RECEPCAO Cleber
+usermod -aG FUNC-GERAL Cleber
+
+usermod -aG DIRETORIA Daniele
+usermod -aG FUNC-GERAL Daniele
+
+usermod -aG COMPRAS Agostinho
+usermod -aG FUNC-GERAL Agostinho
+
+usermod -aG JURIDICO Samuel
+usermod -aG FUNC-GERAL Samuel
+
+usermod -aG PROJETOS Ana
+usermod -aG FUNC-GERAL Ana
+
+usermod -aG FUNC-GERAL Marcio
+usermod -aG FUNC-GERAL Cleiton
+usermod -aG FUNC-GERAL Dulce
+usermod -aG FUNC-GERAL Paulo
+usermod -aG FUNC-GERAL Sonia
+usermod -aG FUNC-GERAL Tabata
+usermod -aG FUNC-GERAL Alberto
+usermod -aG FUNC-GERAL Renata
+usermod -aG FUNC-GERAL Nadir
+usermod -aG FUNC-GERAL Roberto
+usermod -aG FUNC-GERAL Bruna
+
+chgrp CONTABILIDADE CONTABILIDADE 
+chgrp FINANCEIRO FINANCEIRO
+chgrp AUDITORIA AUDITORIA
+chgrp FILANTROPIA FILANTROPIA
+chgrp RH RH
+chgrp TI TI
+chgrp RECEPCAO RECEPCAO
+chgrp DIRETORIA DIRETORIA
+chgrp COMPRAS COMPRAS
+chgrp JURIDICO JURIDICO
+chgrp PROJETOS PROJETOS
+chgrp FUNC-GERAL FUNC-GERAL
+
+chmod 754 CONTABILIDADE 
+chmod 754 FINANCEIRO 
+chmod 754 AUDITORIA 
+chmod 754 FILANTROPIA 
+chmod 754 RH 
+chmod 754 TI 
+chmod 754 RECEPCAO 
+chmod 754 DIRETORIA 
+chmod 754 COMPRAS 
+chmod 754 JURIDICO 
+chmod 754 PROJETOS 
+chmod 754 FUNC-GERAL
+
+chmod 764 /var/yasmin/CONTABILIDADE/livro-caixa
+chmod 764 /var/yasmin/FINANCEIRO/duplicatas-pagas
+chmod 764 /var/yasmin/AUDITORIA/insumos
+chmod 764 /var/yasmin/FILANTROPIA/trabalho-voluntario
+chmod 764 /var/yasmin/RH/controle-ponto
+chmod 764 /var/yasmin/TI/lista-micros
+chmod 764 /var/yasmin/RECEPCAO/lista-recados
+chmod 764 /var/yasmin/DIRETORIA/reuniao-interna
+chmod 764 /var/yasmin/COMPRAS/notas-compras
+chmod 764 /var/yasmin/JURIDICO/processos-internos
+chmod 764 /var/yasmin/PROJETOS/reforma-predio
+
+chmod 744 /var/yasmin/CONTABILIDADE/guias-pagamento
+chmod 744 /var/yasmin/COMPRAS/notas-compras
+chmod 744 /var/yasmin/AUDITORIA/registro-entrada
+chmod 744 /var/yasmin/FILANTROPIA/mentoria
+chmod 744 /var/yasmin/RH/ficha-registro
+chmod 744 /var/yasmin/TI/locais-impressoras
+chmod 744 /var/yasmin/RECEPCAO/registro-ocorrencia
+chmod 744 /var/yasmin/DIRETORIA/projetos-atuais
+chmod 744 /var/yasmin/COMPRAS/notas-pagar
+chmod 744 /var/yasmin/JURIDICO/processos-externos
+chmod 744 /var/yasmin/PROJETOS/mudancas-internas
+
+
+
+
+
+
